@@ -5,8 +5,8 @@ class myapp:
         self.root=root
         self.root.title("hello world")
         self.root.configure(background="black")
-        self.root.bt1=tk.Button(anchor="center",background="black",command =self.hello,foreground="white",text="hello")
-        self.root.bt1.pack()
+        self.root.bt1=tk.Button(root,anchor="center",background="black",command =self.hello,foreground="white",text="hello")
+        self.root.bt1.pack(pady=10,padx=10)
     def hello(self):
         print("hello world....\n")
 
